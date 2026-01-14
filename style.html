@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Your CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #fff;
+    }
+
+    header h2 {
+      font-style: italic;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 70vh;
+      background: linear-gradient(
+          rgba(0,0,0,0.5),
+          rgba(0,0,0,0.5)
+        ),
+        url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      margin: 15px 0;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      background: #4dd0e1;
+      border: none;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Info Section */
+    .info {
+      display: flex;
+      justify-content: space-around;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .info div {
+      width: 30%;
+    }
+
+    .info i {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      align-items: center;
+      padding: 60px;
+      gap: 40px;
+    }
+
+    .about img {
+      width: 350px;
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background: #2f3148;
+      color: #fff;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    footer h4 {
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+
+    .social i {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    .copyright {
+      width: 100%;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .info, .about {
+        flex-direction: column;
+      }
+
+      .info div {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h2>Developer</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h1>A WEB DEVELOPER</h1>
+      <p>I AM A WEB DEVELOPER AND I LOVE TO CREATE WEBSITES.</p>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info">
+    <div>
+      <i class="fa-solid fa-atom"></i>
+      <h3>PROJECTS</h3>
+      <p>I have worked on many projects and I am very proud of them.</p>
+    </div>
+
+    <div>
+      <i class="fa-solid fa-person-skating"></i>
+      <h3>SKILLS</h3>
+      <p>I have a lot of skills and I am very good at programming.</p>
+    </div>
+
+    <div>
+      <i class="fa-solid fa-building-columns"></i>
+      <h3>NETWORK</h3>
+      <p>I am very good at networking and always learning more.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <div>
+      <h2>ABOUT ME</h2>
+      <p>
+        I am a web developer and I love to create websites.
+        I am always looking for new projects and challenges.
+      </p>
+    </div>
+    <img src="images/developer.jpg" alt="About image">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h4>MORE INFO</h4>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="social">
+      <h4>SOCIAL LINKS</h4>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+
+    <div class="copyright">
+      © 2026 Developer
+    </div>
+  </footer>
+
+</body>
+</html>
